@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- 坐标 X -->
+    <EditText
+        android:id="@+id/et_x"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="X 坐标"
+        android:inputType="number"
+        android:textSize="16sp" />
+
+    <!-- 坐标 Y -->
+    <EditText
+        android:id="@+id/et_y"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Y 坐标"
+        android:inputType="number"
+        android:textSize="16sp" />
+
+    <!-- 滑动终点（仅滑动类型） -->
+    <LinearLayout
+        android:id="@+id/layout_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/et_x2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="终点 X"
+            android:inputType="number"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_y2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:hint="终点 Y"
+            android:inputType="number"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <!-- 持续时间 -->
+    <EditText
+        android:id="@+id/et_duration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="持续时间(ms)"
+        android:inputType="number"
+        android:textSize="16sp" />
+
+    <!-- 延迟 -->
+    <EditText
+        android:id="@+id/et_delay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="执行后延迟(ms)"
+        android:inputType="number"
+        android:textSize="16sp" />
+
+</LinearLayout>
